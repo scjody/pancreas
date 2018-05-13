@@ -1,0 +1,46 @@
+#N canvas 832 23 589 424 10;
+#X obj 102 181 sel 1;
+#X obj 209 180 sel 1;
+#X obj 389 180 sel 1;
+#X obj 209 158 expr ($i1 > 60 && $i1 < 480);
+#X obj 389 158 expr ($i1 >= 480);
+#X obj 102 159 expr ($i1 <= 60);
+#X floatatom 209 264 5 0 0 1 prob_of_creep_1 - -, f 5;
+#X floatatom 273 294 5 0 0 1 prob_of_song_2 - -, f 5;
+#X msg 102 203 30 0;
+#X msg 209 202 60 30;
+#X msg 389 202 20 80;
+#X obj 441 253 random 100;
+#X obj 501 158 t b;
+#X obj 177 129 i;
+#X obj 209 230 unpack f f;
+#X obj 150 357 expr if($i1 > $i3 \, 1 \, if(100 - $i2 < $i3 \, 2 \,
+3));
+#X obj 49 20 inlet;
+#X obj 221 23 inlet;
+#X obj 150 407 outlet;
+#X text 272 16 When inlet 1 gets a bang: \; Select song probabilities
+based on inlet 2 \, \; then choose a song type (1 \, 2 \, 3) at random.
+;
+#X connect 0 0 8 0;
+#X connect 1 0 9 0;
+#X connect 2 0 10 0;
+#X connect 3 0 1 0;
+#X connect 4 0 2 0;
+#X connect 5 0 0 0;
+#X connect 6 0 15 0;
+#X connect 7 0 15 1;
+#X connect 8 0 14 0;
+#X connect 9 0 14 0;
+#X connect 10 0 14 0;
+#X connect 11 0 15 2;
+#X connect 12 0 11 0;
+#X connect 13 0 5 0;
+#X connect 13 0 12 0;
+#X connect 13 0 4 0;
+#X connect 13 0 3 0;
+#X connect 14 0 6 0;
+#X connect 14 1 7 0;
+#X connect 15 0 18 0;
+#X connect 16 0 13 0;
+#X connect 17 0 13 1;

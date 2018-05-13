@@ -1,0 +1,30 @@
+#N canvas 850 325 430 359 10;
+#X obj 27 139 +;
+#X obj 136 142 i, f 2;
+#X obj 189 278 sel 1;
+#X obj 300 279 sel 1;
+#X obj 23 38 inlet;
+#X obj 20 323 outlet;
+#X text 182 3 Bounded Accumulator \; Takes an integer at the inlet
+\, adds to the current value \, and outputs the result. \; \$1 sets
+the minimum \; \$2 sets the maximum, f 37;
+#X obj 300 257 >= \$2;
+#X obj 189 256 <= \$1;
+#X obj 97 253 i;
+#X obj 189 302 expr \$1 + 1;
+#X obj 300 301 expr \$2 - 1;
+#X connect 0 0 1 0;
+#X connect 1 0 0 1;
+#X connect 1 0 7 0;
+#X connect 1 0 8 0;
+#X connect 1 0 9 0;
+#X connect 2 0 10 0;
+#X connect 3 0 11 0;
+#X connect 4 0 0 0;
+#X connect 7 0 3 0;
+#X connect 8 0 2 0;
+#X connect 9 0 5 0;
+#X connect 10 0 9 0;
+#X connect 10 0 0 1;
+#X connect 11 0 9 0;
+#X connect 11 0 0 1;
