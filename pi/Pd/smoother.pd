@@ -3,7 +3,7 @@
 #X obj 37 409 outlet;
 #X obj 313 272 outlet;
 #X obj 86 78 metro 1000;
-#X obj 86 55 loadbang;
+#X obj 45 48 loadbang;
 #X obj 199 123 f;
 #X floatatom 199 146 5 0 0 0 - - -, f 5;
 #X floatatom 144 141 5 0 0 0 - - -, f 5;
@@ -17,11 +17,12 @@
 #X text 308 25 Takes a float as input \; outputs for 5 seconds when
 the float changes significantly (>\$1) \; second outlet sends a bang
 when the float changes significantly;
-#X obj 143 209 expr abs($f1 - $f2) > \$1;
+#X obj 156 204 expr abs($f1 - $f2) > \$1;
 #X connect 0 0 7 0;
 #X connect 0 0 5 1;
 #X connect 3 0 5 0;
 #X connect 4 0 3 0;
+#X connect 4 0 12 0;
 #X connect 5 0 6 0;
 #X connect 6 0 16 1;
 #X connect 7 0 8 0;
