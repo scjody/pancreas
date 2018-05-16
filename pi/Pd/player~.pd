@@ -1,4 +1,4 @@
-#N canvas 738 396 702 459 10;
+#N canvas 547 110 702 459 10;
 #X obj 300 -141 bng 15 250 50 0 empty empty play_sound -15 -12 0 10
 -262144 -1 -1;
 #X floatatom 127 -48 5 0 0 0 - - -, f 5;
@@ -24,24 +24,32 @@
 #X obj 531 -20 delay 30000;
 #X obj 169 148 delay 1000;
 #X obj 375 -170 loadbang;
+#X obj 63 52 print;
+#X msg 190 193 sound done;
+#X obj 190 215 print;
+#X msg 294 33 sound type: \$1;
+#X obj 294 55 print;
 #X connect 0 0 11 0;
 #X connect 2 0 13 0;
 #X connect 3 0 12 0;
-#X connect 4 0 12 1;
 #X connect 4 0 13 1;
+#X connect 4 0 12 1;
 #X connect 5 0 15 0;
 #X connect 5 1 16 0;
 #X connect 5 2 21 0;
+#X connect 5 2 24 0;
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
 #X connect 8 0 5 0;
 #X connect 9 0 20 0;
 #X connect 10 0 5 0;
 #X connect 10 0 6 0;
+#X connect 10 0 23 0;
 #X connect 11 0 1 0;
 #X connect 11 0 2 0;
 #X connect 11 0 3 0;
 #X connect 11 0 9 0;
+#X connect 11 0 26 0;
 #X connect 12 0 10 0;
 #X connect 13 0 10 0;
 #X connect 14 0 11 1;
@@ -52,3 +60,5 @@
 #X connect 20 0 0 0;
 #X connect 21 0 0 0;
 #X connect 22 0 4 0;
+#X connect 24 0 25 0;
+#X connect 26 0 27 0;
