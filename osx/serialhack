@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+
+import os
+import time
+
+from serial.tools import list_ports
+
+
+lighting = None
+sound = None
+
+while True:
+    ports = list(list_ports.comports())
+
+    for p in ports:
+        if p.description == 'Generic CDC':
+           lighting = p.device
+        elif p.description == 'Arduino Uno':
+           sound = p.device
+
+    os.system('clear')
+    print 'Sound:    {}'.format(sound)
+    print 'Lighting: {}'.format(lighting)
+
+    if sound:
+        os.system('ln -sf {} /dev/sound'.format(sound))
+    if lighting:
+        os.system('ln -sf {} /dev/lighting'.format(lighting))
+
+    time.sleep(10)
