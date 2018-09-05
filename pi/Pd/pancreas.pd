@@ -1,4 +1,4 @@
-#N canvas 0 23 536 658 10;
+#N canvas 10 82 536 658 10;
 #X obj 11 5 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj 11 25 duino;
@@ -11,14 +11,14 @@
 #X obj 293 540 line~;
 #X msg 296 512 \$1 20;
 #X obj 339 516 vsl 12 81 0.001 0.4 1 0 empty empty front -17 -9 0 10
--262144 -1 -1 6149 1;
+-262144 -1 -1 5549 1;
 #X obj 275 564 *~;
 #X obj 304 564 *~;
 #X obj 275 587 dac~ 1 2;
 #X obj 423 536 line~;
 #X msg 426 509 \$1 20;
 #X obj 466 523 vsl 12 81 0.001 0.1 1 0 empty empty rear -13 -9 0 10
--262144 -1 -1 4000 1;
+-262144 -1 -1 4804 1;
 #X obj 395 568 *~;
 #X obj 428 567 *~;
 #X obj 387 619 dac~ 3 4;
@@ -44,7 +44,7 @@
 #X obj 364 342 line~;
 #X msg 367 314 \$1 20;
 #X obj 413 311 vsl 12 81 0.001 1 1 0 empty empty rear\ dry -13 -9 0
-10 -262144 -1 -1 3136 1;
+10 -262144 -1 -1 3236 1;
 #X obj 346 366 *~;
 #X obj 375 366 *~;
 #X obj 26 53 smoother 0.05;
@@ -81,7 +81,15 @@
 #X msg 321 461 0.1;
 #X msg 381 260 0.015;
 #X msg 467 486 0.02;
+#X obj 139 -6 duino2;
+#X obj 139 16 smoother 0.05;
+#X obj 153 37 smoother 0.05;
+#X obj 169 58 smoother 0.05;
+#X obj 183 80 smoother 0.05;
+#X msg 152 108 1;
+#X obj 199 101 smoother 0.05;
 #X connect 0 0 1 0;
+#X connect 0 0 75 0;
 #X connect 1 0 60 0;
 #X connect 1 1 41 0;
 #X connect 1 2 52 0;
@@ -178,3 +186,14 @@
 #X connect 72 0 9 0;
 #X connect 73 0 38 0;
 #X connect 74 0 15 0;
+#X connect 75 0 76 0;
+#X connect 75 1 77 0;
+#X connect 75 2 78 0;
+#X connect 75 3 79 0;
+#X connect 75 4 81 0;
+#X connect 76 0 80 0;
+#X connect 77 0 80 0;
+#X connect 78 0 80 0;
+#X connect 79 0 80 0;
+#X connect 80 0 4 0;
+#X connect 81 0 80 0;
