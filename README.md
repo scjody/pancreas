@@ -1,5 +1,14 @@
 # Pink Pulsating Pancreas
 
+The Pink Pulsating Pancreas is a scale model of a human pancreas, designed to be entertaining and educational. It's lit from the inside with user-controlled
+lighting fixtures, and plays pancreas facts from built-in speakers.
+
+![Pancreas at night](https://user-images.githubusercontent.com/1136329/143275516-2678d925-f9a0-4815-a639-3ca0ba4bbede.jpg)
+
+[Project proposal](https://github.com/scjody/pancreas/files/7597182/Pink.Pulsating.Pancreas.pdf) - yes, I actually got an art grant to build this!
+
+[Audio](https://soundcloud.com/scjody/sets/pink-pulsating-pancreas) - **WARNING: most of these are really strange!**
+
 ## Architecture
 
 Most of the work is done on a Raspberry Pi running Pure Data. An Arduino-like
@@ -20,4 +29,4 @@ The [DMXSerial](http://www.mathertel.de/Arduino/DMXSerial.aspx) library
 
 ## Raspberry PI
 
-The main controls are written in Pure Data. (Version TBD)
+The main controls are written in Pure Data. (Purr Data Version 2.5.1 (20180414-rev.8916c70) was used.)
