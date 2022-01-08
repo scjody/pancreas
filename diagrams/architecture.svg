@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="594px" preserveAspectRatio="none" style="width:310px;height:594px;background:#FFFFFF;" version="1.1" viewBox="0 0 310 594" width="310px" zoomAndPan="magnify"><defs><filter height="300%" id="fes1w433q3g68" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8c33695e76ced6417eace0ff0e03736b]
+entity rpi--><rect fill="#FEFECE" filter="url(#fes1w433q3g68)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="111" x="15" y="346"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="25" y="368.9951">Raspberry PI</text><!--MD5=[61085418be55119ffd589148b2046ad6]
+entity arduino--><rect fill="#FEFECE" filter="url(#fes1w433q3g68)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="75" x="112" y="241.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="122" y="264.4951">Arduino</text><!--MD5=[4bb23db2275a2496d0e704b25790710d]
+entity controls--><rect fill="#FEFECE" filter="url(#fes1w433q3g68)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="81" x="109" y="145.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="119" y="168.4951">Controls</text><!--MD5=[8e7413fca154fc71c6d1a4c301e0d0ea]
+entity lighting--><rect fill="#FEFECE" filter="url(#fes1w433q3g68)" height="52.5938" style="stroke:#000000;stroke-width:1.5;" width="137" x="161" y="337.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="171" y="360.4951">Lighting Control</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="171" y="376.792">Board (DMX)</text><!--MD5=[7515d26843ad781189c1c35f3e9b71e6]
+entity soundcard--><rect fill="#FEFECE" filter="url(#fes1w433q3g68)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="127" x="7" y="450.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="17" y="473.4951">USB Soundcard</text><!--MD5=[6e7f1837eb9e17cff066343b04cab633]
+entity speakers--><rect fill="#FEFECE" filter="url(#fes1w433q3g68)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="87" x="27" y="546.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="37" y="569.4951">Speakers</text><!--MD5=[e2cc402a40b124d729ac76f333e690c4]
+entity lights--><rect fill="#FEFECE" filter="url(#fes1w433q3g68)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="64" x="197.5" y="450.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="207.5" y="473.4951">Lights</text><!--MD5=[3b1e1f29d6c8100eb600051b01ff3836]
+entity participant--><ellipse cx="149.5" cy="14" fill="#FEFECE" filter="url(#fes1w433q3g68)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M149.5,22 L149.5,49 M136.5,30 L162.5,30 M149.5,49 L136.5,64 M149.5,49 L162.5,64 " fill="none" filter="url(#fes1w433q3g68)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="109" y="82.4951">participant</text><!--MD5=[e65b6b246e2bad55fc42c6e32f09288e]
+link participant to controls--><path d="M149.5,85.767 C149.5,103.849 149.5,124.581 149.5,139.934 " fill="none" id="participant-to-controls" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="149.5,145.332,153.5,136.332,149.5,140.332,145.5,136.332,149.5,145.332" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a00e33154fe5a336d07c1afa2ba230b0]
+link controls to arduino--><path d="M149.5,181.741 C149.5,196.979 149.5,219.307 149.5,235.958 " fill="none" id="controls-to-arduino" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="149.5,241.368,153.5,232.368,149.5,236.368,145.5,232.368,149.5,241.368" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[50039c55b6435beedeb5e3853417c2fc]
+link arduino to lighting--><path d="M163.071,277.888 C174.924,293.074 192.381,315.442 206.426,333.436 " fill="none" id="arduino-to-lighting" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="209.55,337.439,207.1645,327.8834,206.4731,333.4979,200.8586,332.8065,209.55,337.439" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[358ec4a74e0ab032b672009ef696593a]
+link lighting to lights--><path d="M229.5,390.601 C229.5,407.329 229.5,428.969 229.5,445.03 " fill="none" id="lighting-to-lights" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="229.5,450.247,233.5,441.247,229.5,445.247,225.5,441.247,229.5,450.247" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3f50ac8fd8cd7a4ecccf94026459fe29]
+link arduino to rpi--><path d="M132.894,282.046 C119.401,299.552 100.4664,324.12 87.002,341.589 " fill="none" id="arduino-rpi" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="83.7034,345.869,92.3661,341.1831,86.756,341.909,86.0301,336.2989,83.7034,345.869" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="136.099,277.888,127.4372,282.5755,133.0471,281.8486,133.7741,287.4585,136.099,277.888" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[19cb3ab1782aff5ed72e40079a7c20df]
+link rpi to soundcard--><path d="M70.5,382.388 C70.5,399.721 70.5,426.407 70.5,445.27 " fill="none" id="rpi-to-soundcard" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="70.5,450.369,74.5,441.369,70.5,445.369,66.5,441.369,70.5,450.369" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5349a611e6efd9f1c29c3331165b1382]
+link soundcard to speakers--><path d="M70.5,486.741 C70.5,501.9791 70.5,524.3069 70.5,540.9576 " fill="none" id="soundcard-to-speakers" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="70.5,546.3683,74.5,537.3683,70.5,541.3683,66.5,537.3683,70.5,546.3683" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3ed29a52a5417f82e5d6cda47e7b2c69]
+@startuml
+rectangle rpi [
+  Raspberry PI
+]
+rectangle arduino [
+  Arduino
+]
+rectangle controls [
+  Controls
+]
+rectangle lighting [
+  Lighting Control
+  Board (DMX)
+]
+rectangle soundcard [
+  USB Soundcard
+]
+rectangle speakers [
+  Speakers
+]
+rectangle lights [
+  Lights
+]
+actor participant
+
+participant - -> controls
+controls - -> arduino
+arduino - -> lighting
+lighting - -> lights
+
+arduino <- -> rpi
+rpi - -> soundcard
+soundcard - -> speakers
+@enduml
+
+PlantUML version 1.2021.17beta10(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
