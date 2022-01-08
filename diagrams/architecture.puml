@@ -1,0 +1,32 @@
+rectangle rpi [
+  Raspberry PI
+]
+rectangle arduino [
+  Arduino
+]
+rectangle controls [
+  Controls
+]
+rectangle lighting [
+  Lighting Control
+  Board (DMX)
+]
+rectangle soundcard [
+  USB Soundcard
+]
+rectangle speakers [
+  Speakers
+]
+rectangle lights [
+  Lights
+]
+actor participant
+
+participant --> controls
+controls --> arduino
+arduino --> lighting
+lighting --> lights
+
+arduino <--> rpi
+rpi --> soundcard
+soundcard --> speakers
