@@ -14,6 +14,8 @@ lighting fixtures, and plays pancreas facts from built-in speakers.
 Most of the work is done on a Raspberry Pi running Pure Data. An Arduino-like
 MCU is used to read from the fader bank and output DMX.
 
+![](diagrams/architecture.svg)
+
 ## MCU software
 
 The MCU controls DMX lighting fixtures, and will probably handle all
